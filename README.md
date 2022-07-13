@@ -1,4 +1,5 @@
 # Webpage
 HTML &amp; CSS code
 
-# Code repository with various HTML & CSS codes.
+The folders inside this repository represent various projects built using HTML, CSS, & JavaScript. 
+All work belongs to Jesse Kniss.
