@@ -1,0 +1,55 @@
+# Creating a survey form to showcase HTML and CSS skills
+# Created by Jesse Kniss
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <h1 id="title">Coding Survey!</h1>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <p id="description">
+      Take a survey about what coding languages are your favorite!</p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>User Information</legend>
+          <label id="name-label" class="user">Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+          <label id="email-label" class="user">Email: <input id="email" type="email" placeholder="Enter your email" required/></label>
+          <label id="number-label" class="user">Age: <input id="number" type="number" placeholder="Age" min="1" max="120"/>
+        </fieldset>
+        <fieldset>
+          <legend>Do you like to code?</legend>
+          <label>Yes<input name="yes_no" value="yes" type="radio"</label>
+          <label>No<input name="yes_no" value="no" type="radio"</label>
+        </fieldset>
+        <fieldset>
+          <legend>Choose your favorite languages</legend>
+          <label name="language">Java<input type="checkbox" value="java"/></label>
+          <label name="language">Python<input type="checkbox" value="python"/></label>
+          <label name="language">C++<input type="checkbox" value="c++"/></label>
+          <label name="language">JavaScript<input type="checkbox" value="javascript"/></label>
+          <label name="language">PHP<input type="checkbox" value="php"/></label>
+          <label name="language">Ruby<input type="checkbox" value="ruby"/></label>
+          <label name="language">Swift<input type="checkbox" value="swift"/></label>
+          <label name="language">C#<input type="checkbox" value="c#"/></label>
+          <label name="language">GO<input type="checkbox" value="go"/></label>
+          <label name="language">R<input type="checkbox" value="r"/></label>
+        </fieldset>
+        <fieldset>
+          <legend> How many years have you been coding?</legend>
+          <select name="years-coding" id="dropdown" required>
+            <option value="select one">Select One</option>
+            <option value="less_than_1">Less than a year</option>
+            <option value="1_to_5">1 to 5 years</option>
+            <option value="5_to_10">5 to 10 years</option>
+            <option value="greater_than_10">10 years or more</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Why do you like coding?</legend>
+          <textarea name="why_coding_response" rows="4" cols="30" placeholder="I like coding because.." maxlength="500"></textarea>
+        </fieldset>
+        <input type="submit" id="submit">
+      </form>
+  </body>
+</html>
